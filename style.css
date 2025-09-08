@@ -1,31 +1,42 @@
 body {
-  font-family: sans-serif;
+  font-family: 'Helvetica Neue', Arial, sans-serif; /* A more modern font stack */
   margin: 0;
   padding: 0;
   background-color: #fff;
+  color: #333; /* Set a default text color for better readability */
+  line-height: 1.6;
 }
 
 header {
   text-align: center;
-  padding: 0px 0;
+  padding: 20px 0; /* Increased padding for more breathing room */
+  border-bottom: 1px solid #eee; /* A subtle separator */
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 2.5rem; /* Slightly adjusted for better balance */
   margin: 0;
 }
 
 h2 {
-  font-size: 1.5rem;
-  margin: 10px 0;
+  font-size: 1.75rem; /* Adjusted for better hierarchy */
+  margin: 20px 0 10px; /* Adjusted margins */
+  border-bottom: 2px solid #333; /* Underline for section headers */
+  padding-bottom: 5px;
 }
 
-img {
-  max-width: 400px;
-  height: 400px; /* Set height equal to max-width */
-  object-fit: cover; /* Crop image to fit the container */
-  border-radius: 12%;
+h3 {
+    font-size: 1.25rem;
 }
+
+img.hero-image {
+  max-width: 400px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 50%; /* Circular image for a more modern look */
+  border: 5px solid #f5f5f5; /* A subtle border */
+}
+
 
 main {
   max-width: 800px;
@@ -38,7 +49,7 @@ section {
 }
 
 p {
-  line-height: 1.5;
+  line-height: 1.6; /* Increased line-height for better readability */
 }
 
 ul {
@@ -53,21 +64,21 @@ li {
 a {
   color: #333;
   text-decoration: none;
+  transition: color 0.3s ease; /* Smooth transition for hover effects */
 }
 
-.header-content {
-  display: flex;
-  align-items: center;
-  flex-direction: column; /* Change to column for vertical alignment */
+a:hover {
+  color: #007BFF; /* A modern blue for hover, change as you like */
 }
 
-.header-content h1, .header-content h2 {
-  margin: 0; /* Remove margin for vertical alignment */
-}
 
 nav {
   background-color: #f5f5f5;
   padding: 10px;
+  position: sticky; /* Sticky navigation bar */
+  top: 0;
+  z-index: 1000;
+  width: 100%;
 }
 
 nav ul {
@@ -75,42 +86,71 @@ nav ul {
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: center; /* Centered navigation items */
 }
 
 nav li {
-  margin: 0 10px;
+  margin: 0 15px; /* Spaced out navigation items */
 }
 
 nav a {
   color: #333;
   text-decoration: none;
+  font-weight: bold; /* Bolder navigation links */
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
 }
 
-nav ul {
-  justify-content: flex-end; /* Align items to the right */
+nav a:hover {
+    background-color: #ddd;
 }
+
 
 .hero {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 30px;
+  padding: 50px 30px; /* Increased padding */
+  background-color: #f9f9f9; /* A very light grey for the hero section */
+  border-radius: 10px;
 }
 
 .hero-text {
   text-align: left;
+  max-width: 60%;
 }
 
 .hero-image {
   text-align: right;
 }
+
 footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
   text-align: center;
-  padding: 10px;
+  padding: 20px; /* Increased padding */
   background-color: #f5f5f5;
+  border-top: 1px solid #eee; /* A subtle separator */
+  position: relative;
+  width: 100%;
+  bottom: 0;
+}
+
+/* Resume Specific Styles */
+.resume-section {
+    margin-bottom: 20px;
+}
+
+.resume-section h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.resume-section h3 {
+    margin-top: 0;
+}
+
+.resume-section ul {
+    padding-left: 20px;
+    list-style-type: disc;
 }
