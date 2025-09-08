@@ -130,7 +130,7 @@ footer {
   padding: 20px; /* Increased padding */
   background-color: #f5f5f5;
   border-top: 1px solid #eee; /* A subtle separator */
-  position: relative;
+  position: fixed;
   width: 100%;
   bottom: 0;
 }
