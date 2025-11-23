@@ -1,35 +1,176 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="auto">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cal Gilbertson</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography | Cal Gilbertson</title>
+    <meta name="description"
+        content="Photography gallery by Cal Gilbertson. Capturing moments from Michigan Tech and beyond.">
+    <meta property="og:title" content="Photography | Cal Gilbertson">
+    <meta property="og:description"
+        content="Photography gallery by Cal Gilbertson. Capturing moments from Michigan Tech and beyond.">
+    <meta property="og:type" content="website">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Theme Script -->
+    <script src="js/theme.js"></script>
 </head>
-<body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
-<!--    <li><a href="resume.html">Resume</a></li>
--->
-      </ul>
+
+<body class="d-flex flex-column min-vh-100">
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><span class="text-lr-blue">Cal</span> Gilbertson</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="photography.html">Photography</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item ms-lg-3">
+                        <button id="theme-toggle" class="btn btn-link nav-link" aria-label="Toggle Dark Mode">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
-  </header>
-  <main>
-    <section id="photography">
-      <h2>Photography</h2>
-      <ul>
-        <li><a href="https://www.flickr.com/people/198920205@N04/">Flickr</a></li>
-        <li><a href="https://www.instagram.com/cal.gilbertson/">Instagram: cal.gilbertson</a></li>
-      </ul>
-    </section>
-  </main>
-  <footer>
-    <p>&copy; Cal Gilbertson <script type="text/javascript">document.write( new Date().getFullYear() );</script>.</p>
-  </footer>
+
+    <main class="container my-5">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h2 class="fw-bold m-0">Gallery</h2>
+            <div>
+                <a href="https://www.flickr.com/people/198920205@N04/"
+                    class="btn btn-outline-secondary btn-sm me-2 rounded-pill"><i
+                        class="fa-brands fa-flickr text-lr-blue"></i> Flickr</a>
+                <a href="https://www.instagram.com/cal.gilbertson/"
+                    class="btn btn-outline-secondary btn-sm rounded-pill"><i
+                        class="fa-brands fa-instagram text-danger"></i> Instagram</a>
+            </div>
+        </div>
+
+        <div class="masonry-grid">
+            <!-- Images -->
+            <div class="masonry-item">
+                <img src="images/20230325-20230325_193047.jpg" class="img-fluid rounded shadow" alt="Gallery Image">
+            </div>
+            <div class="masonry-item">
+                <img src="images/20231229-_DSC0401-Enhanced-NR.jpg" class="img-fluid rounded shadow"
+                    alt="Gallery Image">
+            </div>
+            <div class="masonry-item">
+                <img src="images/20231229-_DSC0405-Enhanced-NR.jpg" class="img-fluid rounded shadow"
+                    alt="Gallery Image">
+            </div>
+            <div class="masonry-item">
+                <img src="images/20231229-_DSC0417-Enhanced-NR.jpg" class="img-fluid rounded shadow"
+                    alt="Gallery Image">
+            </div>
+            <div class="masonry-item">
+                <img src="images/20240128-_DSC0579-Enhanced-NR.jpg" class="img-fluid rounded shadow"
+                    alt="Gallery Image">
+            </div>
+            <div class="masonry-item">
+                <img src="images/20240202-_DSC0657-Enhanced-NR.jpg" class="img-fluid rounded shadow"
+                    alt="Gallery Image">
+            </div>
+            <div class="masonry-item">
+                <img src="images/20240218-_DSC0848-Enhanced-NR.jpg" class="img-fluid rounded shadow"
+                    alt="Gallery Image">
+            </div>
+            <div class="masonry-item">
+                <img src="images/20240218-_DSC0880-Enhanced-NR.jpg" class="img-fluid rounded shadow"
+                    alt="Gallery Image">
+            </div>
+            <div class="masonry-item">
+                <img src="images/20240225-_DSC0986-Enhanced-NR.jpg" class="img-fluid rounded shadow"
+                    alt="Gallery Image">
+            </div>
+            <div class="masonry-item">
+                <img src="images/20240324-_DSC1697-2-Enhanced-NR.jpg" class="img-fluid rounded shadow"
+                    alt="Gallery Image">
+            </div>
+            <div class="masonry-item">
+                <img src="images/20240329-_DSC1800-Enhanced-NR.jpg" class="img-fluid rounded shadow"
+                    alt="Gallery Image">
+            </div>
+            <div class="masonry-item">
+                <img src="images/20240917-_DSC9353-Enhanced-SR-HDR.jpg" class="img-fluid rounded shadow"
+                    alt="Gallery Image">
+            </div>
+            <div class="masonry-item">
+                <img src="images/20241007-_DSC9449-Enhanced-NR.jpg" class="img-fluid rounded shadow"
+                    alt="Gallery Image">
+            </div>
+            <div class="masonry-item">
+                <img src="images/20241010-_DSC9454-Enhanced-NR.jpg" class="img-fluid rounded shadow"
+                    alt="Gallery Image">
+            </div>
+            <div class="masonry-item">
+                <img src="images/20241010-_DSC9457-Enhanced-NR.jpg" class="img-fluid rounded shadow"
+                    alt="Gallery Image">
+            </div>
+            <div class="masonry-item">
+                <img src="images/20241010-_DSC9482-Enhanced-NR.jpg" class="img-fluid rounded shadow"
+                    alt="Gallery Image">
+            </div>
+            <div class="masonry-item">
+                <img src="images/20241010-_DSC9506-Enhanced-NR.jpg" class="img-fluid rounded shadow"
+                    alt="Gallery Image">
+            </div>
+            <div class="masonry-item">
+                <img src="images/20241010-_DSC9507-Enhanced-NR.jpg" class="img-fluid rounded shadow"
+                    alt="Gallery Image">
+            </div>
+            <div class="masonry-item">
+                <img src="images/20250729-_DSC4133.jpg" class="img-fluid rounded shadow" alt="Gallery Image">
+            </div>
+            <div class="masonry-item">
+                <img src="images/20250730-_DSC4273.jpg" class="img-fluid rounded shadow" alt="Gallery Image">
+            </div>
+            <div class="masonry-item">
+                <img src="images/20250730-_DSC4372.jpg" class="img-fluid rounded shadow" alt="Gallery Image">
+            </div>
+            <div class="masonry-item">
+                <img src="images/20250730-_DSC4397.jpg" class="img-fluid rounded shadow" alt="Gallery Image">
+            </div>
+            <div class="masonry-item">
+                <img src="images/20250906-_DSC4618.jpg" class="img-fluid rounded shadow" alt="Gallery Image">
+            </div>
+            <div class="masonry-item">
+                <img src="images/20250906-_DSC4883.jpg" class="img-fluid rounded shadow" alt="Gallery Image">
+            </div>
+            <div class="masonry-item">
+                <img src="images/20250906-_DSC4948.jpg" class="img-fluid rounded shadow" alt="Gallery Image">
+            </div>
+            <div class="masonry-item">
+                <img src="images/20250914-_DSC5226.jpg" class="img-fluid rounded shadow" alt="Gallery Image">
+            </div>
+            <div class="masonry-item">
+                <img src="images/_DSC0001-Enhanced-SR.jpg" class="img-fluid rounded shadow" alt="Gallery Image">
+            </div>
+        </div>
+    </main>
+
+    <footer class="text-center text-muted small">
+        <div class="container">
+            <span class="desktop-footer">&copy; Cal Gilbertson <span id="year"></span>.</span>
+            <span class="mobile-footer">Cal Gilbertson <span id="year-mobile"></span> for mobile</span>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/components.js"></script>
 </body>
+
 </html>

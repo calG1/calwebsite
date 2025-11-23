@@ -1,35 +1,150 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="auto">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cal Gilbertson</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Cal Gilbertson</title>
+    <meta name="description"
+        content="Explore Cal Gilbertson's projects: Homelab infrastructure, game servers, and open source repositories.">
+    <meta property="og:title" content="Projects | Cal Gilbertson">
+    <meta property="og:description"
+        content="Explore Cal Gilbertson's projects: Homelab infrastructure, game servers, and open source repositories.">
+    <meta property="og:type" content="website">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Theme Script -->
+    <script src="js/theme.js"></script>
 </head>
-<body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="photography.html">Photography</a></li>
-        <li><a href="contact.html">Contact</a></li>
-<!--    <li><a href="resume.html">Resume</a></li>
--->
-      </ul>
+
+<body class="d-flex flex-column min-vh-100">
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><span class="text-lr-blue">Cal</span> Gilbertson</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="photography.html">Photography</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item ms-lg-3">
+                        <button id="theme-toggle" class="btn btn-link nav-link" aria-label="Toggle Dark Mode">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
-  </header>
-  <main>
-    <section id="projects">
-      <h2>Projects</h2>
-      <h3>Hosting a Personal Website</h3>
-      <p>This is currently my only project, I am hosting this site that you're on right now from a computer in my dorm. To do this I am using various different tools, including but not limited to Proxmox for virtualization, DuckDNS for Dynamic DNS, Apache Web Server for the actual hosting, and Google Gemini for programming help.</p>
-      <hr>
-      <p>More projects coming soon!</p>
-    </section>
-  </main>
-  <footer>
-    <p>&copy; Cal Gilbertson <script type="text/javascript">document.write( new Date().getFullYear() );</script>.</p>
-  </footer>
+
+    <main class="container my-5">
+        <h2 class="fw-bold mb-4">Infrastructure & Homelab</h2>
+        <p class="mb-5 text-muted">Services hosted on my personal Proxmox cluster to ensure data privacy and hands-on
+            networking experience.</p>
+
+        <div class="row g-4 mb-5">
+            <div class="col-md-4">
+                <div class="card h-100 p-4">
+                    <div class="card-body">
+                        <div class="mb-3 text-lr-blue"><i class="fa-solid fa-server fa-2x"></i></div>
+                        <h4 class="card-title fw-bold">Minecraft Bedrock</h4>
+                        <p class="card-text">A high-performance dedicated server for Bedrock Edition. Managed within a
+                            virtualized environment to learn about game server latency, port forwarding, and resource
+                            allocation.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 p-4">
+                    <div class="card-body">
+                        <div class="mb-3 text-lr-blue"><i class="fa-solid fa-images fa-2x"></i></div>
+                        <h4 class="card-title fw-bold">Immich</h4>
+                        <p class="card-text">Self-hosted photo and video backup solution. Implemented as a Google Photos
+                            alternative to maintain full ownership of my media library and experiment with Docker
+                            compose stacks.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 p-4">
+                    <div class="card-body">
+                        <div class="mb-3 text-lr-blue"><i class="fa-solid fa-cloud fa-2x"></i></div>
+                        <h4 class="card-title fw-bold">Nextcloud</h4>
+                        <p class="card-text">The central hub of my data. Handles file synchronization across devices,
+                            calendar management, and contacts, all running securely behind a reverse proxy.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr class="my-5">
+
+        <h2 class="fw-bold mb-4"><i class="fa-brands fa-github text-lr-blue"></i> Recent Repositories</h2>
+        <p>Fetched dynamically from <a href="https://github.com/calg1" target="_blank">github.com/calg1</a></p>
+
+        <div class="row g-4" id="github-repos">
+            <div class="col-12 text-center p-5">
+                <div class="spinner-border text-lr-blue" role="status"><span class="visually-hidden">Loading...</span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="text-center text-muted small">
+        <div class="container">
+            <span class="desktop-footer">&copy; Cal Gilbertson <span id="year"></span>.</span>
+            <span class="mobile-footer">Cal Gilbertson <span id="year-mobile"></span> for mobile</span>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/components.js"></script>
+    <script>
+
+        // GitHub Fetch Script
+        const username = 'calg1';
+        const repoContainer = document.getElementById('github-repos');
+
+        fetch(`https://api.github.com/users/${username}/repos?sort=updated&per_page=6`)
+            .then(response => response.json())
+            .then(data => {
+                repoContainer.innerHTML = ''; // Clear spinner
+                if (data.length === 0) {
+                    repoContainer.innerHTML = '<p>No public repositories found.</p>';
+                    return;
+                }
+                data.forEach(repo => {
+                    const col = document.createElement('div');
+                    col.className = 'col-md-6';
+                    col.innerHTML = `
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold"><a href="${repo.html_url}" target="_blank" class="text-decoration-none text-reset">${repo.name}</a></h5>
+                                <p class="card-text small text-muted">${repo.description || 'No description provided.'}</p>
+                                <div class="mt-3">
+                                    <span class="badge bg-secondary me-2">${repo.language || 'Code'}</span>
+                                    <span class="small text-muted"><i class="fa-regular fa-star"></i> ${repo.stargazers_count}</span>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                    repoContainer.appendChild(col);
+                });
+            })
+            .catch(error => {
+                repoContainer.innerHTML = `<div class="col-12 text-danger">Error loading repos. Check console.</div>`;
+                console.error('GitHub Fetch Error:', error);
+            });
+    </script>
 </body>
+
 </html>
